@@ -1,2 +1,2 @@
-# simd-popcnt
-Use simd instructions to improve popcnt performance
+# popcnt
+Improve popcnt performance by using simd instructions
