@@ -36,6 +36,9 @@ func PopcntQuad(nums [4]uint64) [4]uint64 {
 func SimdPopcntQuad(nums [4]uint64) [4]uint64
 
 //go:noescape
+func SimdPopcntQuad2(nums [4]uint64) [4]uint64
+
+//go:noescape
 func shiftRight1Quad(nums [4]uint64) [4]uint64
 
 //go:noescape

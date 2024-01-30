@@ -37,6 +37,13 @@ func BenchmarkSimdPopcntQuad(b *testing.B) {
 	}
 }
 
+func BenchmarkSimdPopcntQuad2(b *testing.B) {
+	nums := [4]uint64{rand.Uint64(), rand.Uint64(), rand.Uint64(), rand.Uint64()}
+	for i := 0; i < b.N; i++ {
+		SimdPopcntQuad2(nums)
+	}
+}
+
 func BenchmarkSerial(b *testing.B) {
 	rand.Seed(time.Now().UnixNano())
 	nums := [4]uint64{rand.Uint64(), rand.Uint64(), rand.Uint64(), rand.Uint64()}
